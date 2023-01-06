@@ -33,7 +33,7 @@
   padding: 5px 0px;
 }
 .nav:hover{
-  border-bottom:2px solid black ;
+  border-bottom:2px solid rgb(255, 0, 0) ;
 }
 .main-container{
   padding: 40px;
@@ -70,6 +70,9 @@ justify-content: center;
 .item{
  min-width: 250px;
  max-width: 350px;
+ transition: 1s;
+ padding: 2px;
+ cursor: pointer;
 }
 .item img {
   width: 100%;
@@ -79,6 +82,10 @@ justify-content: center;
 .item p{
   text-align: justify;
 }
+.item:hover{
+  border-radius: 20px;
+  border: 2px solid black;
+}
 .extras{
 height: 300px;
 background-color: black;
@@ -87,6 +94,12 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 padding: 20px 0px;
+transition: 0.5s;
+cursor: pointer;
+}
+.extras:hover{
+  border: 2px solid white;
+  border-radius: 20px;
 }
 .extras img{
  width: 80%;
@@ -112,8 +125,9 @@ footer p{
 footer a{
   text-decoration: none;
   color: white;
-
+transition: 0.5s;
 }
+
 footer img{
   height: 40px;
 }
