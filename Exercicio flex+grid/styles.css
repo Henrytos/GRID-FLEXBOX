@@ -24,7 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap:50px;
 }
 .nav{
   color: white;
@@ -72,10 +72,14 @@ justify-content: center;
  min-width: 250px;
  max-width: 350px;
  transition: 1s;
- padding: 2px;
+ padding: 12px;
  cursor: pointer;
  border: 2px solid transparent;
  border-radius: 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 .item img {
   width: 100%;
@@ -126,12 +130,27 @@ footer p{
 }
 footer a{
   text-decoration: none;
+  border-bottom: 1px solid red;
   color: white;
-transition: 0.5s;
+ transition: 0.5s;
+ font-weight: bold;
+
 }
 
 footer img{
   height: 40px;
+}
+@media (max-width:500px)
+{
+  footer{
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  .header{
+   justify-content: center;
+  height: 100px;
+  }
 }
 @media (max-width:800px){
   .main-container{
@@ -149,16 +168,9 @@ footer img{
     max-width: 300px;
    }
 }
-@media (max-width:500px)
-{
-  footer{
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-  }
-  .header{
-   justify-content: center;
-  height: 100px;
+@media (min-width:800px) and (max-width:1100px){
+  .esportes2{
+   height: 1400px;
   }
 }
 @media (min-width:2440px){
